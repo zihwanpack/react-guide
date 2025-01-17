@@ -13,7 +13,7 @@ const InputBox = () => {
     const { id, value } = event.target;
     setValue((prevState) => ({
       ...prevState,
-      [id]: value,
+      [id]: Number(value),
     }));
   };
   const { initialInvestment, annualInvestment, expectedReturn, duration } = value;
